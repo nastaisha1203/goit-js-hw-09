@@ -8,6 +8,7 @@ const refs = {
 refs.startBtn.addEventListener('click', onStart);
 refs.stopBtn.addEventListener('click', onStop);
 
+let timerId = null;
 function onStart() {
   refs.startBtn.disabled = true;
   timerId = setInterval(() => {
